@@ -1,11 +1,8 @@
 %-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% Based off of: https://github.com/sb2nov/resume
-% License : MIT
+% Based off of: https://github.com/jakegut/resume
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -18,13 +15,14 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{microtype}
 \input{glyphtounicode}
 
 
 %----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 % \usepackage[default]{sourcesanspro}
 
@@ -33,12 +31,12 @@
 % \usepackage{charter}
 
 
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-\setlength{\footskip}{5pt}
+% \pagestyle{fancy}
+% \fancyhf{} % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+% \setlength{\footskip}{5pt}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -100,129 +98,93 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Liheng Cao} \\ \vspace{1pt}
-    \small (270) 779-6819 $|$ \href{mailto:lihengcao@nyu.edu}{\underline{lihengcao@nyu.edu}} $|$ 
+    \small (270) 779-6819 $|$
+    \href{mailto:lihengcao@nyu.edu}{\underline{lihengcao@nyu.edu}} $|$ 
     \href{https://linkedin.com/in/lihengcao}{\underline{linkedin.com/in/lihengcao}} $|$
-    \href{https://github.com/caoliheng}{\underline{github.com/caoliheng}}
+    \href{https://github.com/caoliheng}{\underline{github.com/lihengcao}} $|$
+    more on my website: \href{https://caoliheng.me}{\underline{caoliheng.me}}
 \end{center}
 
-
-%-----------EDUCATION-----------
+% EDUCATION
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {New York University, Tandon School of Engineering}{Brooklyn, New York}
-      {Bachelor of Science in Computer Science, Minor in Mathematics; GPA: 3.94}{Aug. 2019 -- Present}
-    % \resumeSubheading
-    %   {Blinn College}{Bryan, TX}
-    %   {Associate's in Liberal Arts}{Aug. 2014 -- May 2018}
-  \resumeSubHeadingListEnd
+\resumeSubHeadingListStart
+    \resumeSubheading{New York University, Tandon School of Engineering}{Brooklyn, New York}{Bachelor of Science in Computer Science, Minor in Mathematics}{Aug. 2019 -- May 2022}
+\resumeSubHeadingListEnd
 
-
-%-----------EXPERIENCE-----------
+% EXPERIENCE
 \section{Experience}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
-      {Undergraduate Research Assistant}{June 2021 -- Present}
-      {Machines in Motion Lab, NYU Tandon}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Research contact detection for locomotion in legged robots}
-        \resumeItem{Created Python/C++ bindings for IMU sensor}
-        \resumeItem{Modified USB drive and serial reader code}
-        \resumeItem{Created and merged many small pull requests to fix documentation and other code}
-        \resumeItem{Made repairs on the robots}
-        \resumeItem{Operated Vicon motion tracking system}
-        \resumeItem{Created poster documenting research conducted}
-      \resumeItemListEnd
+\resumeSubHeadingListStart
+    \resumeSubheading{Undergraduate Research Assistant}{Jun. 2021 -- May 2022}{Machines in Motion Lab at NYU Tandon}{Brooklyn, NY}
+        \resumeItemListStart
+            \resumeItem{Researched contact detection for legged locomotion and path integral for policy improvement}
+            \resumeItem{Assembled, tested, and repaired robots for research and class}
+            \resumeItem{Created Python/C++ bindings for IMU sensor, and modified USB drive and serial reader code}
+            \resumeItem{Created and merged many small pull requests to fix documentation and code}
+            \resumeItem{Operated Vicon motion tracking system and integrated with robot motion}
+            \resumeItem{Created poster documenting research}
+        \resumeItemListEnd
       
-% -----------Multiple Positions Heading-----------
-    % \resumeSubSubheading
-    % {Software Engineer I}{Oct 2014 - Sep 2016}
-    % \resumeItemListStart
-    %     \resumeItem{Apache Beam}
-    %      {Apache Beam is a unified model for defining both batch and streaming data-parallel
-    % \resumeSubHeadingListEnd
-%-------------------------------------------
-
-    \resumeSubheading
-      {NYU Robotic Design Team}{Sep. 2020 -- Present}
-      {VIP Team, NYU Tandon}{Brooklyn, NY}
-      \resumeItemListStart
-        \resumeItem{Competed in the NASA Robotics Mining Competition}
-        \resumeItem{Wrote code for communication between server and robot}
-        \resumeItem{Integrated sensor data to control the robot}
-    \resumeItemListEnd
+    \resumeSubheading{Software Team Lead}{Aug. 2021 -- May 2022}{NYU RoboSub VIP Team at NYU Tandon}{Brooklyn, NY}
+        \resumeItemListStart
+            \resumeItem{Assigned tasks and supervised team members in motor control, vision, task planning, and localization}
+            \resumeItem{Researched relevant topics and trained the team}
+            \resumeItem{Developed the vision and task planning of the robot}
+            \resumeItem{Will compete in the RoboSub competition}
+        \resumeItemListEnd
     
-  \resumeSubHeadingListEnd
+    \resumeSubheading{Mathematics Grader}{Aug. 2021 -- May 2022}{NYU Courant Department of Mathematics and NYU Tandon}{Brooklyn, NY}
+        \resumeItemListStart
+            \resumeItem{Graded Discrete Mathematics, Statistics, and Adv. Lin. Alg. \& Complex Var. homework}
+            \resumeItem{Provided feedback on students' work, including \LaTeX\ tips}
+        \resumeItemListEnd
+      
+    \resumeSubheading{Software Competency Member}{Sep. 2020 -- Sep. 2021}{NYU Robotic Design Team VIP Team at NYU Tandon}{Brooklyn, NY}
+        \resumeItemListStart
+            \resumeItem{Competed in the NASA Robotics Mining Competition}
+            \resumeItem{Wrote code for communication between server and robot}
+            \resumeItem{Integrated sensor data to control the robot}
+        \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
 
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-          {\textbf{Sign Language Classifier} $|$ \emph{Python, Jupyter suite}}{Spring 2020}
-          \resumeItemListStart
-            \resumeItem{Worked with a partner to train various models to classify the MNIST Sign Language dataset}
+% PROJECTS
+\section{Projects (more found on GitHub and Personal Website)}
+\resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{Cost Splitter App} $|$ \emph{HTML, JS}}{Jan. 2022}
+        \resumeItemListStart
+            \resumeItem{Built a Cost Splitter app using basic web dev. tools}
+            \resumeItem{Receives name, price, and people to split amongst}
+            \resumeItem{Outputs how much each person pays}
+            \resumeItem{Allows roommates to split group grocery runs at Costco}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading{\textbf{CRUD App} $|$ \emph{Go}}{Nov. 2021}
+        \resumeItemListStart
+            \resumeItem{Built a distributed Create, Read, Update, Delete database app using Go}
+            \resumeItem{Split into multiple frontends and backends}
+            \resumeItem{Implemented the Raft consensus algorithm}
+            \resumeItem{App could be access from multiple frontends, and data was distributed over multiple backends}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading{\textbf{Sign Language Classifier} $|$ \emph{Python, Jupyter Suite}}{Apr. 2021}
+        \resumeItemListStart
+            \resumeItem{Trained various models with a partner to classify the MNIST Sign Language dataset}
             \resumeItem{Created a presentation of results and presented to members of the Introduction to Machine Learning course}
-      \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{SCUDEM V 2020 Differential Equations Modelling Competition} $|$ \emph{Processing, Java}}{November 2020}
-          \resumeItemListStart
-            \resumeItem{Worked within a 3 person team to model and animate the physics of a bird spinning around on a bicycle wheel}
+        \resumeItemListEnd
+        
+    \resumeProjectHeading{\textbf{SCUDEM V 2020 Differential Equations Modelling Competition} $|$ \emph{Processing, Java}}{Nov. 2020}
+        \resumeItemListStart
+            \resumeItem{Modeled and animated the physics of a bird spinning around on a bicycle wheel as a part of a 3 man team}
             \resumeItem{Scored the highest score (4.875/5) out of 180 other teams}
-      \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{E15/E20 ASM Assembler, Emulator, and Cache Simulator} $|$ \emph{E15, E20, Python}}{Fall 2020}
-          \resumeItemListStart
-            \resumeItem{Completed 3 projects using Python as a part of the Computer Architecture and Organization Course}
-            \resumeItem{Assembler processed E15 .asm to .bin}
-            \resumeItem{Emulator emulated an E20 processing running an E20 .bin file}
-            \resumeItem{Cache Simulator simulated cache configurations and hit/miss for memory accessed when running a E20 .bin file}
-      \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Interactive Map Web App for Rupp Arena} $|$ \emph{JavaScript, HTML, CSS}}{Fall 2018 -- Spring 2019}
-          \resumeItemListStart
-            \resumeItem{Lead Programmer and coordinator on a 3 man team}
-            \resumeItem{Took as pilot course Project-Based Programming in High School}
-            \resumeItem{Developed for Student Technology Leadership Program competition head at Rupp Arena in Lexington, Kentucky}
-            \resumeItem{Featured on the STLP website to help competitors get to events}
-            \resumeItem{Plots shortest path between events during competition and points of interest such as bathrooms}
-      \resumeItemListEnd
-        \resumeProjectHeading
-          {\textbf{Prototype for the Automation of Hydrothermal Synthesis} $|$ \emph{LabVIEW}}{Summer 2018}
-          \resumeItemListStart
-            \resumeItem{Worked with graduate students at Anhui University Chemistry Department in China}
-            \resumeItem{Protype planned to feature X-ray diffraction for material analysis}
-            \resumeItem{Programmed physical prototype's motors with LabVIEW}
-      \resumeItemListEnd
-    \resumeSubHeadingListEnd
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, Jupyter suite, C/C++, JavaScript, HTML/CSS} \\
-    %  \textbf{Frameworks}{: React, Node.js, Flask, JUnit, WordPress, Material-UI, FastAPI} \\
-     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, PyCharm} \\
-     \textbf{Libraries}{: NumPy, Matplotlib, scikit-learn} \\
-     \textbf{Other Languages}{: Mandarin Chinese (Read, Speak, Type)}
-    }}
- \end{itemize}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
 
+%-----------Other/SKILLS-----------
+\section{}
+\textbf{Relevant Competencies:} Software Engineering, Research, Robotics, Leadership, Machine Learning, and Computer Vision \\
+\textbf{Relevant Coursework:} Numerical Computing, Theory of Computation, Data Science, Algorithmic Machine Learning, Parallel and Distributed Systems, Computer Graphics, Haptics and Telerobotics, Operating Systems, Computer Networking, Algorithms \\
 
-%-------------------------------------------
 \end{document}
