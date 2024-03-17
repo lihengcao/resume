@@ -101,35 +101,28 @@
 \begin{document}
 \begin{center}
     \textbf{\Huge \scshape Liheng Cao} \\ \vspace{1pt}
-    \href{mailto:lihengcao@gmail.com}{\underline{Email}} $|$ 
-    \href{https://linkedin.com/in/lihengcao}{\underline{LinkedIn}} $|$
-    \href{https://github.com/lihengcao}{\underline{GitHub}} $|$
-    \href{https://lihengcao.github.io}{\underline{More on my (lightweight) personal website}}
+    \href{mailto:lihengcao@gmail.com}{\underline{lihengcao@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/lihengcao}{\underline{linkedin.com/in/lihengcao}} $|$
+    \href{https://github.com/lihengcao}{\underline{github.com/lihengcao}} $|$
+    \href{https://lihengcao.github.io}{\underline{Personal site}}
 \end{center}
-
-% EDUCATION
-\section{Education}
-\resumeSubHeadingListStart
-    \resumeSubheading{New York University, Tandon School of Engineering}{Brooklyn, New York}{Bachelor of Science in Computer Science, Minor in Mathematics, Magna Cum Laude}{Sep. 2019 -- May 2022}
-\resumeSubHeadingListEnd
 
 % EXPERIENCE
 \section{Experience}
 \resumeSubHeadingListStart
-    \resumeSubheading{Meta}{Aug. 2022 -- Feb, 2024}{Software Engineer on FB NewsFeed - Feed Health}{Seattle, WA}
+    \resumeSubheading{Meta/Facebook}{Aug. 2022 -- Feb, 2024}{Software Engineer on Facebook Feed Health}{Seattle, WA}
         \resumeItemListStart
-            \resumeItem{Working on making FB Main NewsFeed faster - both efficiency and latency - and more reliable.}
-            \resumeItem{Designed, implemented, \& deployed automatic throttling platform across Feed to auto-mitigate an entire class of reliability regressions, preventing overnight pages for simple to fix issues.}
-            \resumeItem{Saved \$2M from CPU and Database wins by identifying low hanging fruit and optimizing, experimenting, and reviewing.}
-            \resumeItem{Augmented internal tools to increase developer velocity for identifying efficiency wins.}
-            \resumeItem{As part of a tier 1 oncall, prevented major regressions from taking down the site and reducing user experience adn revenue.}
+            \resumeItem{Efficiency: Saved \textbf{\$2M} from CPU wins across various projects by ideating, optimizing, and experimenting.}
+            \resumeItem{Reliability: Designed, implemented, \& deployed an automatic throttling platform across Feed to \textbf{auto-mitigate an entire class of reliability regressions}, preventing overnight pages.}
+            \resumeItem{Augmented internal tools to simplify workflows and  increase developer velocity for identifying efficiency wins.}
+            \resumeItem{As part of a \textbf{tier 1 oncall}, prevented major regressions from taking down the site and reducing user experience and revenue.}
         \resumeItemListEnd
 
     \resumeSubheading{Machines in Motion Lab at NYU Tandon}{Jun. 2021 -- May 2022}{Undergraduate Research Assistant}{Brooklyn, NY}
         \resumeItemListStart
-            \resumeItem{Researched contact detection for legged locomotion and path integral for policy improvement}
-            \resumeItem{Assembled, tested, and repaired robots for research and class}
-            \resumeItem{Created Python/C++ bindings for IMU sensor, and modified USB drive and serial reader code}
+            \resumeItem{Contributed to research for \textbf{contact detection for legged locomotion} and \textbf{path integral for policy improvement}}
+            \resumeItem{Assembled, tested, and repaired robots for \textbf{research and teaching}}
+            \resumeItem{Created Python/C++ bindings for IMU sensor, and modified USB driver and serial reader code}
             \resumeItem{Created and merged many small pull requests to fix documentation and code}
             \resumeItem{Operated Vicon motion tracking system and integrated with robot motion}
             \resumeItem{Created poster documenting research}
@@ -138,24 +131,36 @@
     \resumeSubheading{NYU RoboSub VIP Team at NYU Tandon}{Aug. 2021 -- May 2022}{Software Team Lead}{Brooklyn, NY}
         \resumeItemListStart
             \resumeItem{Assigned tasks and supervised team members in motor control, vision, task planning, and localization}
-            \resumeItem{Researched relevant topics and trained the team}
-            \resumeItem{Developed the vision and task planning of the robot}
-            \resumeItem{Will compete in the RoboSub competition}
+            \resumeItem{As inaugural software lead, researched relevant topics and trained the team}
+            \resumeItem{Developed the vision and task planning of the robot to allow autonomy}
         \resumeItemListEnd
       
     \resumeSubheading{NYU Robotic Design Team VIP Team at NYU Tandon}{Sep. 2020 -- Sep. 2021}{Software Competency Member}{Brooklyn, NY}
         \resumeItemListStart
             \resumeItem{Competed in the NASA Robotics Mining Competition}
-            \resumeItem{Wrote code for communication between server and robot}
-            \resumeItem{Integrated sensor data to control the robot}
+            \resumeItem{Wrote code to allow communication between server and robot to keep the robot lightweight}
+            \resumeItem{Integrated sensor data to allow robot movement}
         \resumeItemListEnd
     
 \resumeSubHeadingListEnd
 
-% PROJECTS
-\section{Projects | more on \texorpdfstring{\href{https://github.com/lihengcao}{\underline{GitHub}}}{GitHub} and \texorpdfstring{\href{https://lihengcao.github.io}{\underline{Personal website}}}{Personal website}}
+% EDUCATION
+\section{Education}
 \resumeSubHeadingListStart
-    \resumeProjectHeading{\textbf{Cost Splitter App} $|$ \emph{HTML, JS}}{Jan. 2022}
+    \resumeSubheading{New York University, Tandon School of Engineering}{Brooklyn, New York}{Bachelor of Science in Computer Science, Minor in Mathematics, Magna Cum Laude}{Sep. 2019 -- May 2022}
+\resumeSubHeadingListEnd
+
+% PROJECTS
+\section{Select Projects | more on \texorpdfstring{\href{https://github.com/lihengcao}{\underline{GitHub}}}{GitHub} and \texorpdfstring{\href{https://lihengcao.github.io}{\underline{Personal website}}}{Personal website}}
+\resumeSubHeadingListStart
+    \resumeProjectHeading{\textbf{\href{https://lihengcao.github.io/ocr-browser/}{\underline{Character recognition neural network in the browser}}}}{}
+        \resumeItemListStart
+            \resumeItem{Trained my own convolutional neural network using Pytorch on the EMNIST dataset}
+            \resumeItem{Set up a no backend website to demo the model with a mouse cursor drawing.}
+            \resumeItem{No backend! Everything runs on your browser.}
+        \resumeItemListEnd
+    
+    \resumeProjectHeading{\textbf{\href{https://lihengcao.github.io/cost-splitter}{\underline{Cost Splitter App}}}}{}
         \resumeItemListStart
             \resumeItem{Built a Cost Splitter app from scratch using basic web dev. for my roommates}
             \resumeItem{Receives name, price, and people to split amongst}
@@ -163,7 +168,7 @@
             \resumeItem{Allows roommates to split group grocery runs at Costco}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textbf{CRUD App} $|$ \emph{Go}}{Nov. 2021}
+    \resumeProjectHeading{\textbf{CRUD App}}{}
         \resumeItemListStart
             \resumeItem{Built a distributed Create, Read, Update, Delete database app using Go}
             \resumeItem{Split into multiple frontends and backends}
@@ -171,13 +176,13 @@
             \resumeItem{App could be accessed from multiple frontends, and data was distributed over multiple backends}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textbf{Sign Language Classifier} $|$ \emph{Python, Jupyter Suite}}{Apr. 2021}
+    \resumeProjectHeading{\textbf{\href{https://github.com/aaronh314/CS-4563-Project}{\underline{Sign Language Classifier}}}}{}
         \resumeItemListStart
             \resumeItem{Trained various models with a partner to classify the MNIST Sign Language dataset}
             \resumeItem{Created a presentation of results and presented to members of the Introduction to Machine Learning course}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textbf{SCUDEM V 2020 Differential Equations Modelling Competition} $|$ \emph{Processing, Java}}{Nov. 2020}
+    \resumeProjectHeading{\textbf{\href{https://github.com/lihengcao/scudem_animation}{\underline{SCUDEM V 2020 Differential Equations Modelling Competition}}}}{}
         \resumeItemListStart
             \resumeItem{Modeled and animated the physics of a bird spinning around on a bicycle wheel as a part of a 3 man team}
             \resumeItem{Scored the highest score (4.875/5) out of 180 other teams}
@@ -185,8 +190,8 @@
 \resumeSubHeadingListEnd
 
 %-----------Other/SKILLS-----------
-\section{}
-\textbf{Relevant Competencies:} Software Engineering, Research, Robotics, Leadership, Machine Learning, and Computer Vision \\
-\textbf{Relevant Coursework:} Numerical Computing, Theory of Computation, Data Science, Algorithmic Machine Learning, Parallel and Distributed Systems, Computer Graphics, Haptics and Telerobotics, Operating Systems, Computer Networking, Algorithms \\
+% \section{}
+% \textbf{Relevant Competencies:} Software Engineering, Research, Robotics, Leadership, Machine Learning, and Computer Vision \\
+% \textbf{Relevant Coursework:} Numerical Computing, Theory of Computation, Data Science, Algorithmic Machine Learning, Parallel and Distributed Systems, Computer Graphics, Haptics and Telerobotics, Operating Systems, Computer Networking, Algorithms \\
 
 \end{document}
