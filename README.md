@@ -1,1 +1,1 @@
-See pdf file
+[See pdf file](Liheng_Cao_Resume.pdf)
