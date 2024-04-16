@@ -71,7 +71,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\textcolor{MidnightBlue}{#1}} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -83,10 +83,10 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[4]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small\textcolor{MidnightBlue}{\textbf{#1}} (\link{#2}{#3}) & #4 \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -99,46 +99,53 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+\newcommand{\link}[2]{\href{#1}{\textcolor{blue}{\underline{#2}}}}
+\newcommand{\resumeProjectHeadingNoLink}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textcolor{MidnightBlue}{\textbf{#1}} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 \begin{document}
 \begin{center}
     \textbf{\Huge Liheng Cao} \\ \vspace{1pt}
-    \href{mailto:lihengcao@gmail.com}{\textcolor{blue}{\underline{lihengcao@gmail.com}}} $|$ 
-    \href{https://linkedin.com/in/lihengcao}{\textcolor{blue}{\underline{linkedin.com/in/lihengcao}}} $|$
-    \href{https://github.com/lihengcao}{\textcolor{blue}{\underline{github.com/lihengcao}}} $|$
-    \href{https://lihengcao.github.io}{\textcolor{blue}{\underline{Personal website}}}
+    \link{mailto:lihengcao@gmail.com}{lihengcao@gmail.com} $|$ 
+    \link{https://linkedin.com/in/lihengcao}{linkedin.com/in/lihengcao} $|$
+    \link{https://github.com/lihengcao}{github.com/lihengcao} $|$
+    \link{https://lihengcao.github.io}{Personal website}
 \end{center}
 
 % EXPERIENCE
 \section{Experience}
 \resumeSubHeadingListStart
-    \resumeSubheading{\textcolor{MidnightBlue}{Meta/Facebook}}{08/2022 -- 02/2024}{Software Engineer on Facebook Feed Health}{Seattle, WA}
+    \resumeSubheading{Meta/Facebook}{08/2022 -- 02/2024}{Software Engineer on Facebook Feed Health}{Seattle, WA}
         \resumeItemListStart
             \resumeItem{Efficiency: Saved \textbf{\$2M} from CPU wins across various projects by ideating, optimizing, and experimenting.}
             \resumeItem{Reliability: Designed, implemented, \& deployed an automatic throttling platform across Feed to \textbf{auto-mitigate an entire class of reliability regressions}, preventing overnight pages.}
             \resumeItem{Augmented internal tools to simplify workflows and  increase developer velocity for identifying efficiency wins.}
-            \resumeItem{In a \textbf{tier 1 oncall}, prevented major site uptime outages, user experience, and revenue regressions by \textbf{live debugging}.}
+            \resumeItem{In a \textbf{tier 1 oncall}, prevented major site uptime outages, user experience, and revenue regressions by live debugging.}
         \resumeItemListEnd
 
-    \resumeSubheading{\textcolor{MidnightBlue}{Machines in Motion Lab at NYU Tandon}}{06/2021 -- 05/ 2022}{Undergraduate Research Assistant}{Brooklyn, NY}
+    \resumeSubheading{Machines in Motion Lab at NYU Tandon}{06/2021 -- 05/ 2022}{Undergraduate Research Assistant}{Brooklyn, NY}
         \resumeItemListStart
             \resumeItem{Contributed to research for \textbf{contact detection for legged locomotion} and \textbf{path integral for policy improvement}}
-            \resumeItem{Assembled, tested, and repaired robots for research and teaching}
+            \resumeItem{Assembled, tested, and repaired robots for \textbf{research and teaching}}
             \resumeItem{Developed \textbf{Python/C++ bindings} for IMU sensor, and modified USB driver and serial reader code}
             \resumeItem{Operated Vicon motion tracking system and integrated with robot motion}
         \resumeItemListEnd
       
-    \resumeSubheading{\textcolor{MidnightBlue}{NYU RoboSub VIP Team at NYU Tandon}}{08/2021 -- 05/2022}{Software Team Lead}{Brooklyn, NY}
+    \resumeSubheading{NYU RoboSub VIP Team at NYU Tandon}{08/2021 -- 05/2022}{Software Team Lead}{Brooklyn, NY}
         \resumeItemListStart
             \resumeItem{Assigned tasks and \textbf{supervised team members} in motor control, vision, task planning, and localization}
             \resumeItem{As inaugural software lead, researched relevant topics and trained the team}
             \resumeItem{Developed the vision and task planning of the robot to allow autonomy}
         \resumeItemListEnd
       
-    \resumeSubheading{\textcolor{MidnightBlue}{NYU Robotic Design Team VIP Team at NYU Tandon}}{09/2020 -- 09/2021}{Software Competency Member}{Brooklyn, NY}
+    \resumeSubheading{NYU Robotic Design Team VIP Team at NYU Tandon}{09/2020 -- 09/2021}{Software Competency Member}{Brooklyn, NY}
         \resumeItemListStart
-            \resumeItem{Competed in the NASA Robotics Mining Competition}
-            \resumeItem{Implemented code to \textbf{offload computations} from the robot to the server to reduce robot size by allowing \textbf{robot-server communication}}
-            \resumeItem{Integrated sensor data to allow robot movement}
+            \resumeItem{Implemented \textbf{computation offloading} from robot to server to reduce robot size by allowing \textbf{robot-server communication}}
+            \resumeItem{Integrated sensor and motor data to allow robot movement}
         \resumeItemListEnd
     
 \resumeSubHeadingListEnd
@@ -150,36 +157,36 @@
 \resumeSubHeadingListEnd
 
 % PROJECTS
-\section{Select Side Projects | See more on \texorpdfstring{\href{https://github.com/lihengcao}{\textcolor{blue}{\underline{GitHub}}}}{GitHub} and \texorpdfstring{\href{https://lihengcao.github.io}{\textcolor{blue}{\underline{Personal website}}}}{Personal website}}
+\section{Select Side Projects | More on \texorpdfstring{\link{https://github.com/lihengcao}{GitHub}}{GitHub} and \texorpdfstring{\link{https://lihengcao.github.io}{Personal website}}{Personal website}}
 \resumeSubHeadingListStart
-    \resumeProjectHeading{\textcolor{MidnightBlue}{\textbf{2048 game terminal clone}} (\href{https://github.com/lihengcao/2048Game}{\textcolor{blue}{\underline{{repo}}}})}{Python}
+    \resumeProjectHeading{2048 game terminal clone}{https://github.com/lihengcao/2048Game}{repo}{Python}
         \resumeItemListStart
             \resumeItem{This was an interview question that I failed back in the day and I thought it was interesting enough to do as a project}
             \resumeItem{Simple terminal game written in Python}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textcolor{MidnightBlue}{\textbf{Character recognition neural network in the browser}} (\href{https://lihengcao.github.io/ocr-browser/}{\textcolor{blue}{\underline{demo}}})}{Python}
+    \resumeProjectHeading{Character recognition neural network in the browser}{https://lihengcao.github.io/ocr-browser/}{demo}{Python}
         \resumeItemListStart
             \resumeItem{Trained my own convolutional neural network using Pytorch on the EMNIST dataset}
             \resumeItem{Set up a no backend website to demo the model with a mouse cursor drawing.}
-            \resumeItem{No backend! Everything runs on your browser.}
+            \resumeItem{No backend! It's a static site! Everything runs on your browser.}
         \resumeItemListEnd
     
-    \resumeProjectHeading{\textcolor{MidnightBlue}{\textbf{Cost Splitter App}} (\href{https://lihengcao.github.io/cost-splitter}{\textcolor{blue}{\underline{demo}}})}{JavaScript}
+    \resumeProjectHeading{Cost Splitter App}{https://lihengcao.github.io/cost-splitter}{demo}{JavaScript}
         \resumeItemListStart
             \resumeItem{Built a Cost Splitter app from scratch using basic web dev. for my roommates}
             \resumeItem{Receives name, price, and people to split amongst and outputs how much each person pays}
             \resumeItem{Allows roommates to split group grocery runs at Costco and restaurants}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textcolor{MidnightBlue}{\textbf{CRUD App}}}{Go}
+    \resumeProjectHeadingNoLink{CRUD App}{Go}
         \resumeItemListStart
             \resumeItem{Built a distributed Create, Read, Update, Delete database app using Go}
             \resumeItem{Implemented the Raft consensus algorithm}
             \resumeItem{App could be accessed from multiple frontends, and data was distributed over multiple backends}
         \resumeItemListEnd
         
-    \resumeProjectHeading{\textcolor{MidnightBlue}{\textbf{SCUDEM V 2020 Differential Equations Modelling Competition}} (\href{https://github.com/lihengcao/scudem_animation}{\underline{\textcolor{blue}{repo}}})}{Processing}
+    \resumeProjectHeading{SCUDEM V 2020 Differential Equations Modelling Competition}{https://github.com/lihengcao/scudem_animation}{repo}{Processing}
         \resumeItemListStart
             \resumeItem{Modeled and animated the physics of a bird spinning around on a bicycle wheel as a part of a 3 man team}
             \resumeItem{Scored the highest score (4.875/5) out of 180 other teams}
